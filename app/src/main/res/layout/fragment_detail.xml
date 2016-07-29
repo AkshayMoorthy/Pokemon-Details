@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="app.com.example.aks.pokemon.DetailActivityFragment"
+    tools:showIn="@layout/activity_detail"
+    android:weightSum="1">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_gravity="right|top">
+        <ImageView
+            android:id="@+id/list_item_detailicon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/pdname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="name"/>
+            <TextView
+                android:id="@+id/pdid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="ID"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="z"
+        android:id="@+id/pddtext"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:textColor="#fff"/>
+    <ListView
+       android:layout_width="match_parent"
+       android:layout_height="299dp"
+       android:id="@+id/listview_defeat"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_weight="0.29" />
+
+
+
+
+
+</LinearLayout>
